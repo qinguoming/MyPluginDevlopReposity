@@ -1,4 +1,5 @@
 # -*- coding: mbcs -*-
+# this file is a kernel python file
 from abaqus import *
 from abaqusConstants import *
 from symbolicConstants import *
@@ -7,9 +8,9 @@ from symbolicConstants import *
 def SubmitTask(DefaultMode,UserMode,InpFilePath,pureINP,notRUN,jobtype,multiprocessMode,reFormat,CpuNumber,numDomain,Paramode):
     if DefaultMode:
         for jobName in mdb.jobs.keys(): 
-            mdb.jobs[jobName].submit(consistencyChecking=OFF) #提交计算 
-            mdb.jobs[jobName].waitForCompletion() #等待计算完成 
-            print(jobName+" is completed")
+            mdb.jobs[jobName].submit(consistencyChecking=OFF) # submit job 
+            mdb.jobs[jobName].waitForCompletion() #
+            print(jobName+"  process OK")
     if UserMode:
         import os
         # return inpfiles' dir name
@@ -34,7 +35,7 @@ def SubmitTask(DefaultMode,UserMode,InpFilePath,pureINP,notRUN,jobtype,multiproc
             for job in JobNamelist:
                 mdb.jobs[job].submit(consistencyChecking=OFF) #提交计算 
                 mdb.jobs[job].waitForCompletion() #等待计算完成 
-                print(job+"is completed")
+                print(job+"  process OK")
 
 def getInpList(InpDir,pureINP):
     import os
@@ -59,12 +60,10 @@ def getInpList(InpDir,pureINP):
                     inpfiles.append(path)
                     jobNames.append(os.path.splitext(file)[0])
         return (inpfiles,jobNames)
+# here code is used to test the getInpList()
 # import os
-
-# # test function getInpList()
 # InpFilePath='G:/SIMULIA/workspace/06-CMA study/QUICK_START/simpleModel/Job-SIMPLE_MODEL.dat'
 # InpDir=os.path.dirname(InpFilePath)
 # tuple_inp_job=getInpList(pureINP=0,InpDir=InpDir)
 # print(tuple_inp_job[0])
-
 # print(tuple_inp_job[1])
