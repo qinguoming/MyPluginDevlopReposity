@@ -3,31 +3,6 @@
 # unit: SI(mm)
 import sys
 sys.path.append('C:\Python27\Lib\site-packages')
-tp=sys.path
-sys.path=tp+['G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\python2.7\\lib',
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\lib-tk', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\win32', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\win32\\lib', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\Pythonwin', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\DLLs', 
- 'K:\\202308\\20230809\\pyDxf', 
- 'G:\\SIMULIA\\EstProducts\\2020', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\bin', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\bin\\SMAExternal', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\CAEresources', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\SMA', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\bin\\python27.zip', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\win32', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\win32\\lib', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\tools\\SMApy\\python2.7\\lib\\site-packages\\Pythonwin', 
- 'G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\bin',
- '.', 
- 'C:\\Python27\\Lib\\site-packages']
 
 # 外部依赖
 import math
@@ -452,7 +427,6 @@ MatrixPartName='RVEbase'
 FiberInstanceName='Fiber-1'
 MatrixInstanceName='RVEbase-1'
 RVEPartName='RVE'
-
 
 # 中间变量
 # vf0=（纤维横截面面积）/a*b

@@ -5,6 +5,19 @@ sys.path.append('C:\Python27\Lib\site-packages')
 
 from dxfwrite import DXFEngine as dxf
 
+# 参数设定
+# 输出dxf文件名
+DXF_FILE='20230813.dxf'
+# 蜂窝结构基准点坐标(x,y)
+x=0
+y=0
+# 六边形的大小
+r=6
+#水平方向阵列总数
+horizon_num=6
+#竖直方向阵列总数
+vertical_num=6
+
 # define a function to draw a Cshape 
 def DrawCshape(x,y,r):
     # calculate point (x,y)
@@ -66,17 +79,6 @@ def HVCopy(x,y,r,Hnum,Vnum):
                 FixLeft(x_h,y_v,r)
             if v==vn-1 and Iscap:
                 Capping(x_h,y_v,r)
-# const var
-# layer name
-DXF_FILE='20230813.dxf'
-x=0
-y=0
-# 六边形的大小
-r=6
-#水平方向
-horizon_num=6
-#竖直方向
-vertical_num=6
 
 # first : create a dxf file
 drawing = dxf.drawing(DXF_FILE)

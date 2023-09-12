@@ -1,0 +1,259 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from optimization import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].Sketch('20230813', 229.0, -1.0)
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, 3.0), (0.0, 
+    6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 6.0), (5.19615242271, 
+    3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 3.0), (
+    5.19615242271, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, -3.0), (0.0, 
+    -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, -6.0), (-5.19615242271, 
+    -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 6.0), (0.0, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, -3.0), (
+    -5.19615242271, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, 21.0), (0.0, 
+    24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 24.0), (5.19615242271, 
+    21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 21.0), (
+    5.19615242271, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 15.0), (0.0, 
+    12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 12.0), (-5.19615242271, 
+    15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 24.0), (0.0, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, 15.0), (
+    -5.19615242271, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, 39.0), (0.0, 
+    42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 42.0), (5.19615242271, 
+    39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 39.0), (
+    5.19615242271, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 33.0), (0.0, 
+    30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 30.0), (-5.19615242271, 
+    33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 42.0), (0.0, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((-5.19615242271, 33.0), (
+    -5.19615242271, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 51.0), (0.0, 
+    48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((0.0, 48.0), (-5.19615242271, 
+    51.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 3.0), (
+    10.3923048454, 6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 6.0), (
+    15.5884572681, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 3.0), (
+    15.5884572681, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, -3.0), (
+    10.3923048454, -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, -6.0), (
+    5.19615242271, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 6.0), (
+    10.3923048454, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 21.0), (
+    10.3923048454, 24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 24.0), (
+    15.5884572681, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 21.0), (
+    15.5884572681, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 15.0), (
+    10.3923048454, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 12.0), (
+    5.19615242271, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 24.0), (
+    10.3923048454, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((5.19615242271, 39.0), (
+    10.3923048454, 42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 42.0), (
+    15.5884572681, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 39.0), (
+    15.5884572681, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 33.0), (
+    10.3923048454, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 30.0), (
+    5.19615242271, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 42.0), (
+    10.3923048454, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 51.0), (
+    10.3923048454, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((10.3923048454, 48.0), (
+    5.19615242271, 51.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 3.0), (
+    20.7846096908, 6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 6.0), (
+    25.9807621135, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 3.0), (
+    25.9807621135, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, -3.0), (
+    20.7846096908, -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, -6.0), (
+    15.5884572681, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 6.0), (
+    20.7846096908, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 21.0), (
+    20.7846096908, 24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 24.0), (
+    25.9807621135, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 21.0), (
+    25.9807621135, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 15.0), (
+    20.7846096908, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 12.0), (
+    15.5884572681, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 24.0), (
+    20.7846096908, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((15.5884572681, 39.0), (
+    20.7846096908, 42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 42.0), (
+    25.9807621135, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 39.0), (
+    25.9807621135, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 33.0), (
+    20.7846096908, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 30.0), (
+    15.5884572681, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 42.0), (
+    20.7846096908, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 51.0), (
+    20.7846096908, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((20.7846096908, 48.0), (
+    15.5884572681, 51.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 3.0), (
+    31.1769145362, 6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 6.0), (
+    36.3730669589, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 3.0), (
+    36.3730669589, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, -3.0), (
+    31.1769145362, -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, -6.0), (
+    25.9807621135, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 6.0), (
+    31.1769145362, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 21.0), (
+    31.1769145362, 24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 24.0), (
+    36.3730669589, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 21.0), (
+    36.3730669589, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 15.0), (
+    31.1769145362, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 12.0), (
+    25.9807621135, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 24.0), (
+    31.1769145362, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((25.9807621135, 39.0), (
+    31.1769145362, 42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 42.0), (
+    36.3730669589, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 39.0), (
+    36.3730669589, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 33.0), (
+    31.1769145362, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 30.0), (
+    25.9807621135, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 42.0), (
+    31.1769145362, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 51.0), (
+    31.1769145362, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((31.1769145362, 48.0), (
+    25.9807621135, 51.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 3.0), (
+    41.5692193817, 6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 6.0), (
+    46.7653718044, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 3.0), (
+    46.7653718044, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, -3.0), (
+    41.5692193817, -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, -6.0), (
+    36.3730669589, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 6.0), (
+    41.5692193817, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 21.0), (
+    41.5692193817, 24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 24.0), (
+    46.7653718044, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 21.0), (
+    46.7653718044, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 15.0), (
+    41.5692193817, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 12.0), (
+    36.3730669589, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 24.0), (
+    41.5692193817, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((36.3730669589, 39.0), (
+    41.5692193817, 42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 42.0), (
+    46.7653718044, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 39.0), (
+    46.7653718044, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 33.0), (
+    41.5692193817, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 30.0), (
+    36.3730669589, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 42.0), (
+    41.5692193817, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 51.0), (
+    41.5692193817, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((41.5692193817, 48.0), (
+    36.3730669589, 51.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 3.0), (
+    51.9615242271, 6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 6.0), (
+    57.1576766498, 3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 3.0), (
+    57.1576766498, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, -3.0), (
+    51.9615242271, -6.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, -6.0), (
+    46.7653718044, -3.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 6.0), (
+    51.9615242271, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 21.0), (
+    51.9615242271, 24.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 24.0), (
+    57.1576766498, 21.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 21.0), (
+    57.1576766498, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 15.0), (
+    51.9615242271, 12.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 12.0), (
+    46.7653718044, 15.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 24.0), (
+    51.9615242271, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((46.7653718044, 39.0), (
+    51.9615242271, 42.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 42.0), (
+    57.1576766498, 39.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 39.0), (
+    57.1576766498, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 33.0), (
+    51.9615242271, 30.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 30.0), (
+    46.7653718044, 33.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 42.0), (
+    51.9615242271, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 51.0), (
+    51.9615242271, 48.0))
+mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 48.0), (
+    46.7653718044, 51.0))
+mdb.models['Model-1'].convertAllSketches()
