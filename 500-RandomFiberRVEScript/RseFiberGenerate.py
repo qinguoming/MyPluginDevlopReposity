@@ -1,11 +1,12 @@
 # -*- coding: UTF-8 -*-
-# 必须把脚本放到工作目录下
+# 必须把RseFiberGenerate脚本放到工作目录下
 # RSE 算法实现：《A new method for generating random fibre distributions for fibre reinforced composites》
 # unit: SI(mm)
 # 将dxf/matplotlib库路径添加到path
 import sys
 sys.path.append('C:\Python27\Lib\site-packages')
 sys.path.append('G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\python2.7\\lib')
+
 # 外部依赖
 import math,os
 import random
@@ -17,6 +18,8 @@ from abaqusConstants  import *
 # random.uniform(a, b)--生成[a, b] 之间的随机浮点数
 
 # 参数设定
+# abaqus工作目录
+Cae_WorkDir='K:\\202309\\0912'
 # 需要的纤维体积分数
 vfr=0.65
 # RVE宽度
@@ -454,13 +457,15 @@ def DXF2ABAQUS():
 
 # 注意：DXF2ABAQUS()和ShowRVE()不能同时存在！！
 # 输出一些设定信息
+
 # ShowInfo()
-# 返回Rve对象
+# # 返回Rve对象
 # fibers=RVE()
-# 使用matplotlib绘制Rve对象
+# # 使用matplotlib绘制Rve对象
 # ShowRVE(fibers)
-# 将rve对象输出到dxf文件中
-# Draw2DXF(fiberlist=fibers,dxfFile=dxfFile)
+# # 将rve对象输出到dxf文件中
+# Draw2DXF(fiberlist=fibers,dxfFile=os.path.join(Cae_WorkDir,dxfFile))
+
 # 导入dxf文件到abaqus,并完成rve的几何建模,
-# DXF2ABAQUS()
+DXF2ABAQUS()
 
