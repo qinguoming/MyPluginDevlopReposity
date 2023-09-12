@@ -1,20 +1,22 @@
 # -*- coding: UTF-8 -*-
+# 必须把脚本放到工作目录下
 # RSE 算法实现：《A new method for generating random fibre distributions for fibre reinforced composites》
 # unit: SI(mm)
-# 将库路径添加到path
+# 将dxf/matplotlib库路径添加到path
 import sys
 sys.path.append('C:\Python27\Lib\site-packages')
-
+sys.path.append('G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\python2.7\\lib')
 # 外部依赖
-import math
+import math,os
 import random
 from dxfwrite import DXFEngine as dxf
 # abaqus的python2.7环境中自带了matplotlib，但缺少了绘图功能，
 # 需要另外安装一个完整的matplotlib
 import matplotlib.pyplot as plt
+from abaqusConstants  import *
 # random.uniform(a, b)--生成[a, b] 之间的随机浮点数
 
-# Parameter input
+# 参数设定
 # 需要的纤维体积分数
 vfr=0.65
 # RVE宽度
@@ -46,6 +48,9 @@ RVEPartName='RVE'
 # vf0=（纤维横截面面积）/a*b
 d=2*r
 vf0=(math.pi*r*r)/(a*b)
+# 初始纤维中心点生成的区域
+a0=a/10
+b0=b/10
 
 # [x,y,r,flag] , flag--是否与边界相交，且相交的位置
 # flag: 
@@ -59,11 +64,6 @@ vf0=(math.pi*r*r)/(a*b)
 #   + 'Clb':同时和左、下边界线相交
 #   + 'Cru':同时和右、上边界线相交
 #   + 'Crb':同时和右、下边界线相交
-
-# 初始纤维中心点生成的区域
-a0=a/10
-b0=b/10
-
 
 def RVE():
     """得到纤维对象序列"""
@@ -369,7 +369,6 @@ def LowLimitFillFraction():
 def DXF2ABAQUS():
     from abaqus import backwardCompatibility
     from dxf2abq import importdxf
-    from abaqusConstants  import *
     import abaqus
     from abaqus import mdb
     import abaqusConstants 
@@ -453,12 +452,15 @@ def DXF2ABAQUS():
             
     mdb.models[model].rootAssembly.regenerate()
 
-
-# Start Program
 # 注意：DXF2ABAQUS()和ShowRVE()不能同时存在！！
-# fibers=RVE()
-# ShowRVE(fibers)
-# Draw2DXF(fiberlist=fibers,dxfFile=dxfFile)
-
-DXF2ABAQUS()
+# 输出一些设定信息
 # ShowInfo()
+# 返回Rve对象
+# fibers=RVE()
+# 使用matplotlib绘制Rve对象
+# ShowRVE(fibers)
+# 将rve对象输出到dxf文件中
+# Draw2DXF(fiberlist=fibers,dxfFile=dxfFile)
+# 导入dxf文件到abaqus,并完成rve的几何建模,
+# DXF2ABAQUS()
+
