@@ -257,3 +257,21 @@ mdb.models['Model-1'].sketches['20230813'].Line((57.1576766498, 51.0), (
 mdb.models['Model-1'].sketches['20230813'].Line((51.9615242271, 48.0), (
     46.7653718044, 51.0))
 mdb.models['Model-1'].convertAllSketches()
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    gridOrigin=(25.9807622432709, 22.5))
+mdb.models['Model-1'].sketches['__profile__'].retrieveSketch(sketch=
+    mdb.models['Model-1'].sketches['20230813'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    gridOrigin=(25.9807622432709, 22.5))
+mdb.models['Model-1'].sketches['__profile__'].retrieveSketch(sketch=
+    mdb.models['Model-1'].sketches['20230813'])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-1', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-1'].BaseShellExtrude(depth=20.0, sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
