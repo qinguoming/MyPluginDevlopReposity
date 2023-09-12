@@ -4,6 +4,7 @@
 abaqus的python2.7环境中自带了matplotlib，但缺少了绘图功能，需要另外安装一个完整的matplotlib.
 
 第一步，本地安装一个python环境，然后安装好dxfwrite库和matplotlib库，在脚本RseFiberGenerate的6、7、8行代码替换为自己的路径
+
 ```py
 import sys
 sys.path.append('dxfwirte库和matplotlib库的路径')
