@@ -77,4 +77,3 @@ def BlankPart(Model,PartName):
 # e = p.edges
 # edges = e.getSequenceFromMask(mask=('[#60 ]', ), )
 # p.Set(edges=edges, name='Wire-3-Set-1')
-
