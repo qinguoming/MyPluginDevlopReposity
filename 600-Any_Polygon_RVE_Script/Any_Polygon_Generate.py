@@ -4,52 +4,56 @@
 # unit: SI(mm)
 # 将dxf/matplotlib库路径添加到path
 import sys
+
 sys.path.append('C:\Python27\Lib\site-packages')
 sys.path.append('G:\\SIMULIA\\EstProducts\\2020\\win_b64\\code\\python2.7\\lib')
 
 # 外部依赖
-import math,os
+import math, os
 import random
 from dxfwrite import DXFEngine as dxf
+import Intersect as px
 # abaqus的python2.7环境中自带了matplotlib，但缺少了绘图功能，
 # 需要另外安装一个完整的matplotlib
 import matplotlib.pyplot as plt
+
 # from abaqusConstants  import *
 # random.uniform(a, b)--生成[a, b] 之间的随机浮点数
 
 # 参数设定
 # abaqus工作目录
-Cae_WorkDir='K:\\202309\\0912'
+Cae_WorkDir = 'K:\\202309\\0912'
 # 需要的纤维体积分数
-vfr=0.65
+vfr = 0.65
 # RVE宽度
-a=100.0
+a = 100.0
 # RVE高度
-b=100.0
+b = 100.0
 # RVE深度
-fiberLength=100.0
+fiberLength = 100.0
 # 纤维形状定义
-PolygonShapeDef='D:\\five_pointed_star.txt'
+PolygonShapeDef = 'rectangle.txt'
 # 纤维间距最小值
-lmin=0.5
+lmin = 0.5
 # 纤维间距最大值
-lmax=1
+lmax = 1
 # 每根纤维都会尝试N次，寻找符合条件的纤维，500已经足够大了。
-N=500
+N = 500
 # dxf 文件名
-dxfFile='rve.dxf'
+dxfFile = 'rve.dxf'
 # ABAQUS Model name
 # 运行前，必须model必须存在，且为当前工作对象。
-model='Model-1'
-FiberPartName='Fiber'
-MatrixPartName='RVEbase'
-FiberInstanceName='Fiber-1'
-MatrixInstanceName='RVEbase-1'
-RVEPartName='RVE'
+model = 'Model-1'
+FiberPartName = 'Fiber'
+MatrixPartName = 'RVEbase'
+FiberInstanceName = 'Fiber-1'
+MatrixInstanceName = 'RVEbase-1'
+RVEPartName = 'RVE'
 
 # 初始纤维中心点生成的区域
-a0=a/10
-b0=b/10
+a0 = a / 10
+b0 = b / 10
+
 
 # [x,y,r,flag] , flag--是否与边界相交，且相交的位置
 # flag: 
@@ -67,7 +71,15 @@ b0=b/10
 # define polygon shape object
 def GetPolygonShape(PolygonShapeDef):
     import numpy as np
-    data = np.genfromtxt(PolygonShapeDef,dtype=[float, float],delimiter=',')  # 将文件中数据加载到data数组里
-    print(data)
+    data = np.genfromtxt(PolygonShapeDef, dtype=[float, float], delimiter=',')  # 将文件中数据加载到data数组里
+    return data
 
-GetPolygonShape()
+
+GetPolygonShape(PolygonShapeDef)
+
+p1=px.Point(-1,-1)
+p2=px.Point(1,1)
+p3=px.Point(-1,1)
+p4=px.Point(1,-1)
+
+print(px.is_intersected(p1,p2,p3,p4))
